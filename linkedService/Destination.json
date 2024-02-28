@@ -1,0 +1,11 @@
+{
+	"name": "Destination",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://storagetestraghav.dfs.core.windows.net/"
+		}
+	}
+}
