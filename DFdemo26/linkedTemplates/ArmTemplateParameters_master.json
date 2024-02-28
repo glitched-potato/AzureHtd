@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DFdemo26"
+		},
+		"Covid cases_properties_typeProperties_url": {
+			"value": "https://opendata.ecdc.europa.eu/covid19/nationalcasedeath/csv/data.csv"
+		},
+		"Destination_properties_typeProperties_url": {
+			"value": "https://storagetestraghav.dfs.core.windows.net/"
+		},
+		"Source_properties_typeProperties_serviceEndpoint": {
+			"value": "https://storageacc4datafactory.blob.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
