@@ -5,11 +5,20 @@
 			"referenceName": "Destination",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"DestinationFileName": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().DestinationFileName",
+					"type": "Expression"
+				},
 				"fileSystem": "testcontfordb"
 			},
 			"columnDelimiter": "\t",

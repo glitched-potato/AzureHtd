@@ -5,12 +5,20 @@
 			"referenceName": "Source",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"SourceFilename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "tps00010.zip",
+				"fileName": {
+					"value": "@dataset().SourceFilename",
+					"type": "Expression"
+				},
 				"container": "testdatacopy"
 			},
 			"columnDelimiter": "\t",
